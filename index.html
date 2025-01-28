@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>一封情书</title>
-        <link rel="icon" type="image/x-icon" href="https://i.loli.net/2021/06/03/lFg2V4WUcmkB98G.png">
+        <link rel="icon" type="image/x-icon"
+            href="https://i.loli.net/2021/06/03/lFg2V4WUcmkB98G.png">
         <link
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
             rel="stylesheet">
@@ -330,24 +331,25 @@
             <!-- 这一页暂时用来修复bug -->
             <div class="page page0">
             </div>
+        </div>
 
-            <!-- 音乐控制图标 -->
-            <div class="music-icon-container" id="musicIconContainer">
-                <i class="fas fa-music" id="toggleMusic"
-                    style="font-size: 20px;padding: 10px;"></i>
+        <!-- 音乐控制图标 -->
+        <div class="music-icon-container" id="musicIconContainer">
+            <i class="fas fa-music" id="toggleMusic"
+                style="font-size: 20px;padding: 10px;"></i>
+        </div>
+
+        <!-- 音乐播放器控制面板 -->
+        <div class="audio-player" id="audioPlayer">
+            <div class="controls">
+                <audio id="audio" controls autoplay loop>
+                    <source src="music/love.mp3" type="audio/mp3">
+                    你的浏览器不支持音频播放。
+                </audio>
             </div>
+        </div>
 
-            <!-- 音乐播放器控制面板 -->
-            <div class="audio-player" id="audioPlayer">
-                <div class="controls">
-                    <audio id="audio" controls autoplay loop>
-                        <source src="music/love.mp3" type="audio/mp3">
-                        你的浏览器不支持音频播放。
-                    </audio>
-                </div>
-            </div>
-
-            <script>
+        <script>
             // 定义数组，存储每一页的内容
 const pages = [
     {
@@ -724,5 +726,5 @@ const pages = [
 
 </script>
 
-        </body>
-    </html>
+    </body>
+</html>
