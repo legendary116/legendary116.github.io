@@ -22,7 +22,7 @@
         .container {
             width: 100%;
             height: 100%;
-            display: flex;
+            display: none;
             flex-direction: row;
             perspective: 1500px;
             overflow: hidden;
@@ -323,7 +323,7 @@
                 <div class="line right"></div>
             </div>
             <div class="heart-icon" onclick="openEnvelope()"></div>
-            <div class="text">xx 亲启</div>
+            <div class="text">段美佳 亲启</div>
         </div>
 
         <!-- 翻页内容 -->
@@ -353,11 +353,11 @@
             // 定义数组，存储每一页的内容
 const pages = [
     {
-        text: '<p class="fadingText">xx <span class="highlight">❤</span> xx 一生一世</p>',
+        text: '<p class="fadingText">小刘 <span class="highlight">❤</span> 美佳 一生一世</p>',
         bgImageUrl: 'images/1.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">过去的XX一直是一个人生活，享受着孤独，也憧憬着爱情。</p>',
+        text: '<p class="fadingText">过去的小刘一直是一个人生活，享受着孤独，也憧憬着爱情。</p>',
         bgImageUrl: 'images/2.jpg',  // 背景图片路径
     },
     {
@@ -401,7 +401,7 @@ const pages = [
         bgImageUrl: 'images/12.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">可是XX的爱情又在哪里呢？</p>',
+        text: '<p class="fadingText">可是小刘的爱情又在哪里呢？</p>',
         bgImageUrl: 'images/13.jpg',  // 背景图片路径
     },
     {
@@ -413,31 +413,31 @@ const pages = [
         bgImageUrl: 'images/15.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">于是，XX一个人继续向前走，走在茫茫的雪地上</p>',
+        text: '<p class="fadingText">于是，小刘一个人继续向前走，走在茫茫的雪地上</p>',
         bgImageUrl: 'images/16.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">直到有一天XX与XX相遇了</p>',
+        text: '<p class="fadingText">直到有一天小刘与美佳相遇了</p>',
         bgImageUrl: 'images/17.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">XX喜欢XX，非常非常的喜欢，因为XX的出现，XX脸上有了更加灿烂的笑容</p>',
+        text: '<p class="fadingText">小刘喜欢美佳，非常非常的喜欢，因为美佳的出现，小刘开始有了不一样的感觉</p>',
         bgImageUrl: 'images/18.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">可是XX会喜欢XX吗？</p>',
+        text: '<p class="fadingText">可是美佳会喜欢小刘吗？</p>',
         bgImageUrl: 'images/19.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">XX想。。。</p>',
+        text: '<p class="fadingText">小刘想。。。</p>',
         bgImageUrl: 'images/20.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">XX想和XX在一起</p>',
+        text: '<p class="fadingText">小刘想和美佳在一起</p>',
         bgImageUrl: 'images/21.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">然后XX会经常去找XX</p>',
+        text: '<p class="fadingText">然后小刘会经常去找美佳</p>',
         bgImageUrl: 'images/22.jpg',  // 背景图片路径
     },
     {
@@ -445,27 +445,27 @@ const pages = [
         bgImageUrl: 'images/23.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">晚上XX会把XX送回家</p>',
+        text: '<p class="fadingText">晚上小刘会把美佳送回家</p>',
         bgImageUrl: 'images/24.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">直到很晚，XX再一个人回家</p>',
+        text: '<p class="fadingText">直到很晚，小刘再一个人回家</p>',
         bgImageUrl: 'images/25.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">然后高兴地进入梦乡，在梦中还会和XX在一起</p>',
+        text: '<p class="fadingText">然后高兴地进入梦乡，在梦中还会和美佳在一起</p>',
         bgImageUrl: 'images/26.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">XX想成为了XX的逛街助手</p>',
+        text: '<p class="fadingText">小刘想成为了美佳的逛街助手</p>',
         bgImageUrl: 'images/27.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">然后，XX和XX一起去很多地方玩</p>',
+        text: '<p class="fadingText">然后，小刘和美佳一起去很多地方玩</p>',
         bgImageUrl: 'images/28.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">XX也想和XX一块成为一对吃货</p>',
+        text: '<p class="fadingText">小刘也想和美佳一块成为一对吃货</p>',
         bgImageUrl: 'images/29.jpg',  // 背景图片路径
     },
     {
@@ -473,7 +473,7 @@ const pages = [
         bgImageUrl: 'images/30.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">再然后，XX会开始学习她的技能</p>',
+        text: '<p class="fadingText">再然后，他们会各自开始学习</p>',
         bgImageUrl: 'images/31.jpg',  // 背景图片路径
     },
     {
@@ -489,7 +489,7 @@ const pages = [
         bgImageUrl: 'images/34.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">XX会感觉自己好幸福，因为自己有了家，那个有XX在的地方</p>',
+        text: '<p class="fadingText">小刘会感觉自己好幸福，因为自己有了家，那个有美佳在的地方</p>',
         bgImageUrl: 'images/35.jpg',  // 背景图片路径
     },
     {
@@ -497,27 +497,27 @@ const pages = [
         bgImageUrl: 'images/36.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">XX不想这样</p>',
+        text: '<p class="fadingText">小刘不想这样</p>',
         bgImageUrl: 'images/37.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">一定是我有什么做的不对，XX会这么想</p>',
+        text: '<p class="fadingText">一定是我有什么做的不对，小刘会这么想</p>',
         bgImageUrl: 'images/38.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">如果没有XX在身边，窗外就没有风景</p>',
+        text: '<p class="fadingText">如果没有美佳在身边，窗外就没有风景</p>',
         bgImageUrl: 'images/39.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">如果没有XX在身后</p>',
+        text: '<p class="fadingText">如果没有美佳在身后</p>',
         bgImageUrl: 'images/40.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">XX又怎会飞的更高更远</p>',
+        text: '<p class="fadingText">小刘又怎会飞的更高更远</p>',
         bgImageUrl: 'images/41.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">XX不想这样。他要为XX改变自己，XX不知道XX喜欢什么，但他一定会满足她的一切。</p>',
+        text: '<p class="fadingText">小刘不想这样。他要为美佳改变自己，小刘不知道美佳喜欢什么，但他一定会满足她的一切。</p>',
         bgImageUrl: 'images/42.jpg',  // 背景图片路径
     },
     {
@@ -529,23 +529,23 @@ const pages = [
         bgImageUrl: 'images/44.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">直到一天，XX不想让自己后悔，XX开始准备一份惊喜</p>',
+        text: '<p class="fadingText">直到一天，小刘不想让自己后悔，开始准备一份惊喜</p>',
         bgImageUrl: 'images/45.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">看着惊喜一点点准备好了，XX好开心，因为他想象着XX看到时，开心的样子</p>',
+        text: '<p class="fadingText">看着惊喜一点点准备好了，小刘好开心，因为他想象着美佳看到时，开心的样子</p>',
         bgImageUrl: 'images/46.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">想想未来他们或许，会有一辈子，XX好开心，或许他可以和XX一起，去全世界好多地方玩</p>',
+        text: '<p class="fadingText">想想未来他们或许，会有一辈子，或许他可以一起，去全世界好多地方玩</p>',
         bgImageUrl: 'images/47.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">XX也会继续努力，为了他和XX的梦之城堡</p>',
+        text: '<p class="fadingText">小刘也会继续努力，为了他和美佳的梦之城堡</p>',
         bgImageUrl: 'images/48.jpg',  // 背景图片路径
     },
     {
-        text: '<p class="fadingText">XX想和XX一起过幸福的生活</p>',
+        text: '<p class="fadingText">小刘想和美佳一起过幸福的生活</p>',
         bgImageUrl: 'images/49.jpg',  // 背景图片路径
     },
     {
